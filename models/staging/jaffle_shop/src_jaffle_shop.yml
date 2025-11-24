@@ -3,11 +3,13 @@ version: 2
 sources:
   - name: jaffle_shop
     database: raw
+    description: clone of postgres application database
 
     loaded_at_field: _etl_loaded_at
 
     tables:
       - name: customers
+        description: raw customers data
 
       - name: orders
         freshness:

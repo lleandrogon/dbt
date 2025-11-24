@@ -9,7 +9,7 @@ payments AS (
 order_payments AS (
     SELECT
         order_id,
-        sum(
+        SUM(
             CASE
                 WHEN status = 'success' THEN amount
             END
